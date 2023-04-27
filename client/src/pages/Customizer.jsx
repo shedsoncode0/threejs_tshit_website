@@ -1,4 +1,13 @@
-import React from 'react'
+import { motion as m, AnimatePresence } from 'framer-motion'
+import React, {useState, useEffect} from 'react'
+
+import config from '../config/config'
+import state from '../store'
+import { download } from '../assets'
+import { downloadCanvasToImage, reader } from '../config/helpers'
+import { EditorTabs, FilterTabs, DecalTypes } from '../config/constants'
+import { fadeAnimation, slideAnimation } from '../config/motion'
+
 
 const Customizer = () => {
   return (
